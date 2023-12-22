@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
           color: const Color.fromARGB(255, 152, 214, 245),
           image: DecorationImage(
             image: AssetImage("assets/winter2.jpg"),
-            fit: BoxFit.cover,
+            fit: BoxFit.fitWidth
           ),),
         child: Column(children:[SizedBox(height: 200,),
           

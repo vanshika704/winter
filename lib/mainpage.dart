@@ -15,9 +15,10 @@ class _mainpageState extends State<mainpage> {
           backgroundColor: const Color.fromARGB(255, 2, 29, 51),
           title: const Text(
             "Touch the boy with cold hands",
-            style: TextStyle(color: Colors.white,height: 0.9
-            ,)
-            ,
+            style: TextStyle(
+              color: Colors.white,
+              height: 0.9,
+            ),
           ),
         ),
         body: Boy());
@@ -54,14 +55,10 @@ class _BoyState extends State<Boy> {
                 height: 1900.0,
                 color: Color.fromARGB(255, 129, 234, 241),
                 child: AnimatedAlign(
-                  alignment:
-                      selected ? Alignment.center : Alignment.topLeft,
-                  duration: const Duration(seconds: 1),
-                  curve: Curves.fastOutSlowIn,
-                  child: selected
-                      ? Image.asset('assets/boy.jpg')
-                      : const SizedBox(),
-                ),
+                    alignment: selected ? Alignment.center : Alignment.topLeft,
+                    duration: const Duration(seconds: 1),
+                    curve: Curves.fastOutSlowIn,
+                    child: Image.asset('assets/boy.jpg')),
               ),
             ),
           ],
